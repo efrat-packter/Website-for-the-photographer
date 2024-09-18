@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HomePage</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="project.css">
+  <script src="project.js"></script>
+</head>
+
+<body>
+  <div class="container-fluid  ">
+    <nav class="container-fluid d-flex  bg-white ">
+      <div class="container d-flex justify-content-between  ">
+        <div class="nav_inside d-flex  ">
+          <a class="nav-links" href="HomePage.html">בית</a>
+          <div class="d-block"> 
+            <a class="galery center nav-links" href="Galery.htm">גלריה</a>
+            <div class="links">
+              <ul class="list-group-item">
+                <li class="list-group-item"><a href="צילום ילדים.html" id="link">ילדים</a></li>
+                <li class="list-group-item"><a href="צילום ילדים.html" id="link">ניו-בורן</a></li>
+                <li class="list-group-item"><a href="צילום קולינרי.html" id="link">קולינרי</a></li>
+                <li class="list-group-item"><a href="צילום אדריכלי.html" id="link">אדריכלי</a></li>
+              </ul>
+            </div>
+          </div>
+          <a class="nav-links" href="price.html">מחירון</a>
+          <a class="nav-links" href="form.html">צור קשר</a>
+        </div>
+        <div class="d-none d-sm-block"><img id="logo" src="לוגו חתוך.png" alt=""></div>
+      </div>
+    </nav>    
+  </div>
+  <div style="height: 200px;"></div> 
+  <main class="container">
+    <div id="demo" class="carousel slide" data-bs-ride="carousel"> 
+      <div class="carousel-inner border1">
+        <!-- <div class="carousel-item active">
+          <img src="לרוחב/30221eed6b1b921398eb97378cd71765.jpg" alt="" class="d-block"
+            style="width:100%">
+        </div>
+        
+        <div class="carousel-item">
+          <img src="לרוחב/6063c05956aa7089c10ad328a85811e5.jpg" alt="" class="d-block"
+            style="width:100%">
+        </div>
+        <div class="carousel-item">
+          <img src="לרוחב/80dc94a33766da7c81ecdc5ddc11b2da.jpg" alt="" class="d-block"
+            style="width:100%">
+        </div> -->
+        <div class="carousel-item">
+          <img src="לרוחב/IMG_9360.JPG" alt="" class="d-block"
+            style="width:100%">
+
+        </div>
+        <div class="carousel-item">
+          <img src="לרוחב/IMG_9060.jpg" alt="" class="d-block"
+            style="width:100%">
+            
+        </div>
+
+      </div>
+    </div>
+    <div style="height: 50px;"></div> 
+    <div class="about  d-flex justify-content-center">
+      <p>
+      <span >לכל תמונה
+        יש סיפור
+        לילדים יש עולם משלהם, ואם רק היינו יודעים למצוא את הדרך הנכונה לטייל בעולמם המקסים של הילדים, היינו מאושרים
+        מתמיד, מלאי חיוך צחוק ושמחה. בעזרת המצלמה המקסימה וחיוך משוחרר אני מצליחה לצעוד פסיעה אחר פסיעה אל תוך עולמו של
+        הילד המתוק והילדה החיננית, ולשחרר מהם את כמויות הצחוק הדרושות להוצאת תמונה נדירה שמתעדת רגע של עולם מלא.
+        בדור בו הכל מצולם וכל רגע מקבל תיעוד, זהו הזמן לנצל את הרגעים החשובים בחיים ולהפוך אותם לזיכרון בלתי נשכח. אל
+        תוותרו על התמונות הסלולריות היומיומיות, הם ישמשו אתכן להעלות זיכרונות של רגעים מתוקים מלאי שמחה וחדוות חיים,
+        ויחד עם זאת נצלו את המאורעות המיוחדים ופנקו את עצמכם עם תמונות מקצועיות ואלבום מרהיב ויפהפה שיגרום לכם לחוות
+        מחדש את המאורע, את הרגע היפה. לתת להיסטוריה המשפחתית במה של כבוד, ולתעד את דמויותיכם היפות באווירת הרגע, אווירה
+        של אהבה נצחית.
+        לתעד. לשמור. ליהנות.
+       
+      </span>
+      <div>      <img src="4bb315a897ba4da11bfbe8f16a001f67.jpg" alt="" id="child" class="border1">
+      </div>
+      </p>
+    </div>
+  </main>
+  <div style="height: 50px;"></div> 
+  <footer class="container center ">
+    <div class="center" style="height: 50px;">
+      <a href="https://www.britannica.com/topic/Facebook"><img class="map" src="אייקונים/whatsapp.png" alt=""></a>
+      <a href="mailto:veredung@gmail.com"><img class="map" src="אייקונים/gmail.png" alt=""></a>
+      <a href="מפה.JPG"><img class="map" src="אייקונים/684908.png " alt=""></a>
+    </div>
+  </footer>
+
+
+  <script>
+    let iIndex = 0;
+    carousel();
+    function carousel() {
+      let i;
+      let x = document.getElementsByClassName("carousel-item")
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      iIndex++;
+      if (iIndex > x.length) {
+        iIndex = 1;
+      }
+      x[iIndex - 1].style.display = "block";
+      setTimeout(carousel,1800)
+    }
+    function init1() {
+      isOpen = false;
+
+    }
+    function toggel() {
+      if (!isOpen) {
+        openForm();
+        isOpen = true;
+      }
+      else {
+        closeForm();
+        isOpen = false;
+
+      }
+    }
+    function openForm() {
+      document.querySelector("#myform").style.display = "block";
+
+    }
+    function closeForm() { document.querySelector("#myform").style.display = "none"; }
+
+    function finishForm() {
+
+      document.querySelector("#finish").style.display = "block";
+
+    }
+    function closeFinishForm() {
+      document.querySelector("#finish").style.display = "none";
+
+    }
+  </script>
+</body>
+
+</html>
